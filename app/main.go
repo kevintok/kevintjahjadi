@@ -20,7 +20,10 @@ var index = template.Must(template.ParseFiles(
   "static/templates/index.html",
 ))
 
-var page404 = template.Must(template.ParseFiles("static/templates/static_pages/404.html"))
+var page404 = template.Must(template.ParseFiles(
+  "static/templates/base.html",
+  "static/templates/static_pages/404.html",
+))
 
 func init() {
     http.HandleFunc("/", root)

@@ -1,0 +1,2 @@
+sass --watch static_fes/css/main.scss:static/css/main.css
+dev_appserver.py ../kevintjahjadi
