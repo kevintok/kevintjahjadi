@@ -12,7 +12,7 @@ body {
 
 footer {
     position: fixed;
-    top: 97%;
+    bottom: 0;
     width: 100%;
     background-color: white;
     text-align: center;
