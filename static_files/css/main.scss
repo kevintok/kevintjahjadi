@@ -1,3 +1,22 @@
+@import "prefixer";
+@import "border-radius";
+
+$column: 5.5%;
+$gutter: 3%;
+// $orange: #E86731;
+$blue-l: #9FB2B3;
+$blue-n: #77A7DF;
+$blue-d: #40484A;
+$blue-l-hover: #778A8B;
+$gray-l: #F2F2F2;
+$gray-n: #808080;
+$gray-d: #4D4D4D;
+$green-l: #748d42;
+$green-n: #95A678;
+$green-d: #546E3C;
+
+$dashed-border: 1px dashed #bfbfbf;
+
 html, body {
     padding: 0;
     margin: 0;
@@ -6,7 +25,7 @@ html, body {
 body {
     width: 100%;
     height: 100%;
-    background-color: #DDDDDD;
+    background-color: $gray-l;
     font-family: Verdana, Helvetica, sans-serif;
 }
 
@@ -14,9 +33,65 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: white;
+    background-color: $gray-n;
+    color: $gray-l;
     text-align: center;
 }
+/* *********************************************************************************************************************
+ * Grid System Styling
+ */
+#contents {
+    margin: 0 auto;
+    padding: 0 0 0 1%;
+    max-width: 1020px;
+}
+
+.row {
+    clear: both;
+    padding: 0 10px;
+}
+
+@for $i from 1 through 12 {
+    .col#{$i} {
+        float: left;
+        margin: 0 3% 0 0;
+        width: $column * $i + $gutter * ($i - 1);
+        @if $i == 12 {
+            margin: 0;
+        }
+        &.last {
+            margin: 0;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+}
+
+@media all and (min-width: 1024px) {
+    #contents {
+        max-width: 1000px;
+    }
+
+    #contents .row {
+        padding: 0;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .row {
+    }
+
+    @for $i from 1 through 11 {
+        .col#{$i} {
+            float: none;
+            width: 99%;
+        }
+    }
+}
+/* ****************************************************************************************************************** */
 
 .page404 {
     position: fixed;

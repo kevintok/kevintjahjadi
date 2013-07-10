@@ -1,2 +1,6 @@
-sass --watch static_fes/css/main.scss:static/css/main.css
+sass --watch static_files/css/main.scss:static/css/main.css
 dev_appserver.py ../kevintjahjadi
+
+
+https://github.com/airbnb/javascript
+http://stackoverflow.com/questions/9573644/go-appengine-how-to-structure-templates-for-application

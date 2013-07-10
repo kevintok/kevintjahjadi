@@ -1,5 +1,5 @@
 package test
-// http://stackoverflow.com/questions/9573644/go-appengine-how-to-structure-templates-for-application
+
 import (
     // "appengine"
     // "appengine/datastore"
