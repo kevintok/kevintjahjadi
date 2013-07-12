@@ -1,3 +1,4 @@
+@import "init";
 @import "prefixer";
 @import "border-radius";
 @import "grid";
@@ -5,30 +6,37 @@
 $red: #CD5C5C;
 $gray-l: #F5F5F5;
 $gray-d: #F3EFE0;
-$yellow: #FFFE59;
+$brown: #936A4A;
 
 $gray-link: #808080;
 $gray-link-hover: #4D4D4D;
 
+$blue-l: #6BCAE2;
+$blue-d: #51A5BA;
 
-html, body {
-    padding: 0;
-    margin: 0;
-}
+$green-l: #AFEAAA;
+$green-n: #87E293;
+$green-d: #41924B;
+
+$orange: #FE8402;
 
 body {
-    width: 100%;
-    height: 100%;
     background-color: $gray-l;
     font-family: Verdana, Helvetica, sans-serif;
+    border-top: 15px solid $gray-d;
+    color: $brown;
+    font-size: 1em;
+    line-height: 1.4;
 }
 
 a {
+    cursor:pointer;
     text-decoration: none;
     &.gray {
         color: $gray-link;
         &:hover {
             color: $gray-link-hover;
+            border:2px dashed #000
         }
     }
 }
@@ -37,9 +45,12 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 5px 0 3px;
+    padding: 4px 0 2px;
     background-color: $gray-d;
     color: gray;
+    div {
+        padding: 3px 0;
+    }
 }
 
 .footer-left {
