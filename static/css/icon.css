@@ -27,7 +27,7 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
-.icon-plus, .icon-minus, .icon-checkmark, .icon-cancel, .icon-notice, .icon-info, .icon-blocked, .icon-stop, .icon-search, .icon-map-marker, .icon-home, .icon-pencil, .icon-cog, .icon-star, .icon-star-2, .icon-mail, .icon-google-plus, .icon-facebook, .icon-twitter, .icon-github, .icon-linkedin {
+.icon-plus, .icon-minus, .icon-checkmark, .icon-cancel, .icon-notice, .icon-info, .icon-blocked, .icon-stop, .icon-search, .icon-map-marker, .icon-home, .icon-pencil, .icon-cog, .icon-star, .icon-star-2, .icon-facebook, .icon-github, .icon-linkedin, .icon-mail, .icon-google-plus, .icon-twitter {
 	font-family: 'icon-kevin';
 	speak: none;
 	font-style: normal;
@@ -82,21 +82,21 @@ you can use the generic selector below, but it's slower:
 .icon-star-2:before {
 	content: "\e00e";
 }
-.icon-mail:before {
-	content: "\e00f";
-}
-.icon-google-plus:before {
-	content: "\e010";
-}
 .icon-facebook:before {
 	content: "\e011";
-}
-.icon-twitter:before {
-	content: "\e012";
 }
 .icon-github:before {
 	content: "\e013";
 }
 .icon-linkedin:before {
 	content: "\e014";
+}
+.icon-mail:before {
+	content: "\e015";
+}
+.icon-google-plus:before {
+	content: "\e016";
+}
+.icon-twitter:before {
+	content: "\e018";
 }

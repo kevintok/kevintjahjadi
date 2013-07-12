@@ -28,13 +28,30 @@ body {
     font-family: Verdana, Helvetica, sans-serif;
 }
 
+a {
+    text-decoration: none;
+    &.gray {
+        color: $gray-l;
+        &:hover {
+            color: $gray-d;
+        }
+    }
+}
+
 footer {
     position: fixed;
     bottom: 0;
     width: 100%;
     background-color: $gray-n;
     color: $gray-l;
-    text-align: center;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
 }
 
 .page404 {
