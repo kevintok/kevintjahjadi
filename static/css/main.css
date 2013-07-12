@@ -224,5 +224,8 @@ footer {
 .footer-right {
   text-align: right; }
 
+@media all and (max-width: 768px) {
+  .footer-left, .footer-right {
+    text-align: center; } }
 .page404 {
   text-align: center; }
