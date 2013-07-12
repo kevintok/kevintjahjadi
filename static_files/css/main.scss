@@ -2,19 +2,14 @@
 @import "border-radius";
 @import "grid";
 
-// $orange: #E86731;
-$blue-l: #9FB2B3;
-$blue-n: #77A7DF;
-$blue-d: #40484A;
-$blue-l-hover: #778A8B;
-$gray-l: #F2F2F2;
-$gray-n: #808080;
-$gray-d: #4D4D4D;
-$green-l: #748d42;
-$green-n: #95A678;
-$green-d: #546E3C;
+$red: #CD5C5C;
+$gray-l: #F5F5F5;
+$gray-d: #F3EFE0;
+$yellow: #FFFE59;
 
-$dashed-border: 1px dashed #bfbfbf;
+$gray-link: #808080;
+$gray-link-hover: #4D4D4D;
+
 
 html, body {
     padding: 0;
@@ -31,9 +26,9 @@ body {
 a {
     text-decoration: none;
     &.gray {
-        color: $gray-l;
+        color: $gray-link;
         &:hover {
-            color: $gray-d;
+            color: $gray-link-hover;
         }
     }
 }
@@ -42,8 +37,9 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: $gray-n;
-    color: $gray-l;
+    padding: 5px 0 3px;
+    background-color: $gray-d;
+    color: gray;
 }
 
 .footer-left {
