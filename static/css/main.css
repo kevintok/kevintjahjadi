@@ -83,10 +83,13 @@ img, object, embed {
   height: auto;
   max-width: 100%; }
 
+.clear {
+  clear: both; }
+
 /* *********************************************************************************************************************
  * Grid System Styling
  */
-#contents {
+.contents {
   margin: 0 auto;
   padding: 0 0 0 1%;
   max-width: 1020px; }
@@ -229,10 +232,10 @@ img, object, embed {
     display: block; }
 
 @media all and (min-width: 1024px) {
-  #contents {
+  .contents {
     max-width: 1000px; }
 
-  #contents .row {
+  .contents .row {
     padding: 0; } }
 @media all and (max-width: 768px) {
   .col1 {
@@ -287,14 +290,16 @@ body {
   font-size: 1em;
   line-height: 1.4; }
 
-a {
-  cursor: pointer;
-  text-decoration: none; }
-  a.gray {
-    color: gray; }
-    a.gray:hover {
-      color: #4d4d4d;
-      border: 2px dashed black; }
+.spotlight {
+  padding: 20px 0; }
+
+header {
+  padding: 20px 0;
+  border-top: 1px dashed black;
+  border-bottom: 1px dashed black; }
+  header a {
+    display: inline;
+    line-height: 51px; }
 
 footer {
   position: fixed;
@@ -311,6 +316,25 @@ footer {
 
 .footer-right {
   text-align: right; }
+
+.center-align {
+  text-align: center; }
+
+.hide {
+  display: none; }
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #936a4a; }
+  a:active {
+    color: #936a4a; }
+  a:hover {
+    color: #4d4d4d; }
+  a.gray {
+    color: gray; }
+    a.gray:hover {
+      color: #4d4d4d; }
 
 @media all and (max-width: 768px) {
   .footer-left, .footer-right {

@@ -20,6 +20,8 @@ $green-d: #41924B;
 
 $orange: #FE8402;
 
+$dashed-border: 1px dashed #000;
+
 body {
     background-color: $gray-l;
     font-family: Verdana, Helvetica, sans-serif;
@@ -29,15 +31,17 @@ body {
     line-height: 1.4;
 }
 
-a {
-    cursor:pointer;
-    text-decoration: none;
-    &.gray {
-        color: $gray-link;
-        &:hover {
-            color: $gray-link-hover;
-            border:2px dashed #000
-        }
+.spotlight {
+    padding: 20px 0;
+}
+
+header {
+    padding: 20px 0;
+    border-top: $dashed-border;
+    border-bottom: $dashed-border;
+    a {
+        display: inline;
+        line-height: 51px;
     }
 }
 
@@ -53,12 +57,29 @@ footer {
     }
 }
 
-.footer-left {
-    text-align: left;
-}
+.footer-left { text-align: left }
+.footer-right { text-align: right }
+.center-align { text-align: center }
+.hide { display: none }
 
-.footer-right {
-    text-align: right;
+a {
+    cursor:pointer;
+    text-decoration: none;
+
+    color: $brown;
+    &:active {
+        color: $brown;
+    }
+    &:hover {
+        color: $gray-link-hover;
+    }
+
+    &.gray {
+        color: $gray-link;
+        &:hover {
+            color: $gray-link-hover;
+        }
+    }
 }
 
 @media all and (max-width: 768px) {
