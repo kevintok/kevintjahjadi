@@ -295,15 +295,12 @@ body {
 
 header {
   padding: 20px 0;
-  border-bottom: 1px dashed black; }
+  border-bottom: 1px dashed black;
+  text-align: center; }
   header a {
-    display: table-cell;
-    height: inherit;
-    vertical-align: middle; }
-  header ul {
-    float: right; }
-  header li {
-    float: left; }
+    padding: 5px 20px;
+    background-color: #afeaaa;
+    color: #41924b; }
 
 .header-logo {
   width: 50px;
@@ -349,3 +346,52 @@ a {
     text-align: center; } }
 .page404 {
   text-align: center; }
+
+/* *********************************************************************************************************************
+ * Parallax Styling
+ */
+.parallax-wrapper {
+  height: 4000px; }
+
+.parallax-background {
+  position: fixed;
+  left: 400px;
+  width: 400px;
+  height: 400px;
+  display: block;
+  background: url("/images/torchlight_avatars/Torchlight_avatar_1.jpg") center; }
+
+#parallax1 {
+  background-color: #87e293;
+  z-index: 3;
+  position: fixed;
+  left: 50%;
+  /* align left edge with center of viewport */
+  top: 100px;
+  width: 100px;
+  margin-left: -50px;
+  /* move left by half element's width */ }
+
+#parallax2 {
+  background-color: #41924b;
+  color: whitesmoke;
+  z-index: 1;
+  position: fixed;
+  left: 100px;
+  top: 200px;
+  width: 400px;
+  margin-left: -11px;
+  /* move left by half element's width */ }
+
+#parallax3 {
+  background-color: gray;
+  color: #fe8402;
+  z-index: 2;
+  position: fixed;
+  left: 60%;
+  top: 300px;
+  width: 400px;
+  margin-left: -11px;
+  /* move left by half element's width */ }
+
+/* ****************************************************************************************************************** */
