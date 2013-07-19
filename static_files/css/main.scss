@@ -36,8 +36,9 @@ body {
 }
 
 header {
+    // position: fixed;
+    // width: 100%;
     padding: 20px 0;
-    border-top: $dashed-border;
     border-bottom: $dashed-border;
     a {
         display: table-cell;
