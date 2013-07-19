@@ -91,7 +91,7 @@ img, object, embed {
  */
 .contents {
   margin: 0 auto;
-  padding: 0 0 0 1%;
+  padding: 0;
   max-width: 1020px; }
 
 .row {
@@ -100,8 +100,8 @@ img, object, embed {
 
 .col1 {
   float: left;
-  margin: 0 3% 0 0;
-  width: 5.5%; }
+  margin: 0 2% 0 0;
+  width: 6.5%; }
   .col1.last {
     margin: 0; }
   .col1 img {
@@ -111,8 +111,8 @@ img, object, embed {
 
 .col2 {
   float: left;
-  margin: 0 3% 0 0;
-  width: 14%; }
+  margin: 0 2% 0 0;
+  width: 15%; }
   .col2.last {
     margin: 0; }
   .col2 img {
@@ -122,8 +122,8 @@ img, object, embed {
 
 .col3 {
   float: left;
-  margin: 0 3% 0 0;
-  width: 22.5%; }
+  margin: 0 2% 0 0;
+  width: 23.5%; }
   .col3.last {
     margin: 0; }
   .col3 img {
@@ -133,8 +133,8 @@ img, object, embed {
 
 .col4 {
   float: left;
-  margin: 0 3% 0 0;
-  width: 31%; }
+  margin: 0 2% 0 0;
+  width: 32%; }
   .col4.last {
     margin: 0; }
   .col4 img {
@@ -144,8 +144,8 @@ img, object, embed {
 
 .col5 {
   float: left;
-  margin: 0 3% 0 0;
-  width: 39.5%; }
+  margin: 0 2% 0 0;
+  width: 40.5%; }
   .col5.last {
     margin: 0; }
   .col5 img {
@@ -155,8 +155,8 @@ img, object, embed {
 
 .col6 {
   float: left;
-  margin: 0 3% 0 0;
-  width: 48%; }
+  margin: 0 2% 0 0;
+  width: 49%; }
   .col6.last {
     margin: 0; }
   .col6 img {
@@ -166,8 +166,8 @@ img, object, embed {
 
 .col7 {
   float: left;
-  margin: 0 3% 0 0;
-  width: 56.5%; }
+  margin: 0 2% 0 0;
+  width: 57.5%; }
   .col7.last {
     margin: 0; }
   .col7 img {
@@ -177,8 +177,8 @@ img, object, embed {
 
 .col8 {
   float: left;
-  margin: 0 3% 0 0;
-  width: 65%; }
+  margin: 0 2% 0 0;
+  width: 66%; }
   .col8.last {
     margin: 0; }
   .col8 img {
@@ -188,8 +188,8 @@ img, object, embed {
 
 .col9 {
   float: left;
-  margin: 0 3% 0 0;
-  width: 73.5%; }
+  margin: 0 2% 0 0;
+  width: 74.5%; }
   .col9.last {
     margin: 0; }
   .col9 img {
@@ -199,8 +199,8 @@ img, object, embed {
 
 .col10 {
   float: left;
-  margin: 0 3% 0 0;
-  width: 82%; }
+  margin: 0 2% 0 0;
+  width: 83%; }
   .col10.last {
     margin: 0; }
   .col10 img {
@@ -210,8 +210,8 @@ img, object, embed {
 
 .col11 {
   float: left;
-  margin: 0 3% 0 0;
-  width: 90.5%; }
+  margin: 0 2% 0 0;
+  width: 91.5%; }
   .col11.last {
     margin: 0; }
   .col11 img {
@@ -221,8 +221,8 @@ img, object, embed {
 
 .col12 {
   float: left;
-  margin: 0 3% 0 0;
-  width: 99%;
+  margin: 0 2% 0 0;
+  width: 100%;
   margin: 0; }
   .col12.last {
     margin: 0; }
@@ -298,8 +298,17 @@ header {
   border-top: 1px dashed black;
   border-bottom: 1px dashed black; }
   header a {
-    display: inline;
-    line-height: 51px; }
+    display: table-cell;
+    height: inherit;
+    vertical-align: middle; }
+  header ul {
+    float: right; }
+  header li {
+    float: left; }
+
+.header-logo {
+  width: 50px;
+  height: 50px; }
 
 footer {
   position: fixed;
