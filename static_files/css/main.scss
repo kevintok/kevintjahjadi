@@ -74,9 +74,9 @@ a {
     cursor:pointer;
     text-decoration: none;
 
-    color: $brown;
+    color: $orange;
     &:active {
-        color: $brown;
+        color: $orange;
     }
     &:hover {
         color: $gray-link-hover;
@@ -118,7 +118,7 @@ a {
     background-color: $green-n;
     z-index: 3;
     position: fixed;
-    left: 50%; /* align left edge with center of viewport */
+    left: 400px; /* align left edge with center of viewport */
     top: 100px;
     width: 100px;
     margin-left: -50px; /* move left by half element's width */

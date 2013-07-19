@@ -331,9 +331,9 @@ footer {
 a {
   cursor: pointer;
   text-decoration: none;
-  color: #936a4a; }
+  color: #fe8402; }
   a:active {
-    color: #936a4a; }
+    color: #fe8402; }
   a:hover {
     color: #4d4d4d; }
   a.gray {
@@ -365,7 +365,7 @@ a {
   background-color: #87e293;
   z-index: 3;
   position: fixed;
-  left: 50%;
+  left: 400px;
   /* align left edge with center of viewport */
   top: 100px;
   width: 100px;
