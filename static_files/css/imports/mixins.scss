@@ -1,3 +1,5 @@
+@import "prefixer";
+
 @mixin border-radius ($radii) {
   @include prefixer(border-radius, $radii);
 }
@@ -36,4 +38,12 @@
 @mixin border-right-radius($radii) {
   @include prefixer(border-top-right-radius, $radii);
   @include prefixer(border-bottom-right-radius, $radii);
+}
+
+@mixin transition ($which, $speed, $method, $delay) {
+    @include prefixer(transition, $which $speed $method $delay);
+}
+
+@mixin animation ($which, $speed, $method, $delay) {
+    @include prefixer(animation, $which $speed $method $delay);
 }

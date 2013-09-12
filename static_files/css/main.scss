@@ -1,149 +1,116 @@
-@import "init";
-@import "prefixer";
-@import "border-radius";
-@import "grid";
+/*
+    Description: Main CSS styles
+    Author: Kevin Tjahjadi
+*/
+/* - CONTENTS
+-------------------------------------------------
+    - SASS Imports ......................... 1.0.
+        - CSS Reset ........................ 1.1.
+        - Grid ............................. 1.2.
+        - Colours .......................... 1.3.
+        - Mixins ............................1.4.
+        - Base Elements .................... 1.5.
+        - Link Elements .................... 1.6.
+        - Font Face ........................ 1.7.
+    - Global ............................... 2.0.
+        - Structural ....................... 2.1.
+        - Build Elements ................... 2.2.
+*/
 
-$red: #CD5C5C;
-$gray-l: #F5F5F5;
-$gray-d: #F3EFE0;
-$brown: #936A4A;
+/*********************************************
+    - 1.0 -  SASS IMPORTS
+*********************************************/
 
-$gray-link: #808080;
-$gray-link-hover: #4D4D4D;
+    /* - 1.1. - RESETS
+    ------------------------------------------ */
 
-$blue-l: #6BCAE2;
-$blue-d: #51A5BA;
+    @import "imports/reset";
 
-$green-l: #AFEAAA;
-$green-n: #87E293;
-$green-d: #41924B;
 
-$orange: #FE8402;
+    /* - 1.2. - GRID
+    ------------------------------------------ */
 
-$dashed-border: 1px dashed #000;
+    @import "imports/grid";
 
-body {
-    background-color: $gray-l;
-    font-family: Verdana, Helvetica, sans-serif;
-    border-top: 15px solid $gray-d;
-    color: $brown;
-    font-size: 1em;
-    line-height: 1.4;
-}
 
-.spotlight {
-    padding: 20px 0;
-}
+    /* - 1.3. - COLOURS
+    ------------------------------------------ */
 
-header {
-    // position: fixed;
-    // width: 100%;
-    padding: 20px 0;
-    border-bottom: $dashed-border;
-    text-align: center;
-    a {
-        padding: 5px 20px;
-        background-color: $green-l;
-        color: $green-d;
-    }
-}
+    @import "imports/colours";
 
-.header-logo {
-    width: 50px;
-    height: 50px;
-}
 
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 4px 0 2px;
-    background-color: $gray-d;
-    color: gray;
-    div {
-        padding: 3px 0;
-    }
-}
+    /* - 1.4. - MIXINS
+    ------------------------------------------ */
 
-.footer-left { text-align: left }
-.footer-right { text-align: right }
-.center-align { text-align: center }
-.hide { display: none }
+    @import "imports/mixins";
 
-a {
-    cursor:pointer;
-    text-decoration: none;
+    /* - 1.5. - BASE ELEMENTS
+    ------------------------------------------ */
 
-    color: $orange;
-    &:active {
-        color: $orange;
-    }
-    &:hover {
-        color: $gray-link-hover;
+    @import "imports/base-elements";
+
+    /* - 1.6. - LINK ELEMENTS
+    ------------------------------------------ */
+
+    @import "imports/links";
+
+    /* - 1.7. - FONT FACE
+    ------------------------------------------ */
+
+    @import "imports/font-face";
+
+/*********************************************
+    - 2.0 -  GLOBAL
+*********************************************/
+
+
+    /* - 2.1. - STRUCTURAL
+    ------------------------------------------ */
+
+    html {
+        font-size: 100%;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
     }
 
-    &.gray {
-        color: $gray-link;
-        &:hover {
-            color: $gray-link-hover;
+    body {
+        margin: 0;
+        font-family: Geneva, Lucida Sans, Lucida Grande, Lucida Sans Unicode, Verdana, sans-serif;
+        font-size: 1em;
+        line-height: 1.4;
+        background-color: $background-color;
+    }
+
+    header {
+        padding: 20px 0;
+        text-align: center;
+        background-color: $black;
+    }
+
+    footer {
+        background-color: $footer;
+        color: $footer-text;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 4px 0 2px;
+
+        div {
+            padding: 3px 0;
         }
     }
-}
 
-@media all and (max-width: 768px) {
-    .footer-left, .footer-right {
+    .left { text-align: left }
+    .right { text-align: right }
+    .center { text-align: center }
+
+    /* - 2.2. - BUILD ELEMENTS
+    ------------------------------------------ */
+
+    .hide {
+        display: none;
+    }
+
+    .center-align {
         text-align: center;
     }
-}
-
-.page404 {
-    text-align: center;
-}
-
-/* *********************************************************************************************************************
- * Parallax Styling
- */
-.parallax-wrapper {
-    height: 4000px;
-}
-.parallax-background {
-    position: fixed;
-    left: 400px;
-    width: 400px;
-    height: 400px;
-    display: block;
-    background: url('/images/torchlight_avatars/Torchlight_avatar_1.jpg') center;
-}
-#parallax1 {
-    background-color: $green-n;
-    z-index: 3;
-    position: fixed;
-    left: 400px; /* align left edge with center of viewport */
-    top: 100px;
-    width: 100px;
-    margin-left: -50px; /* move left by half element's width */
-}
-#parallax2 {
-    background-color: $green-d;
-    color: $gray-l;
-    z-index: 1;
-    position: fixed;
-    left: 100px; //align left edge with center of viewport
-    top: 200px;
-    width: 400px;
-    margin-left: -11px; /* move left by half element's width */
-}
-#parallax3 {
-    background-color: gray;
-    color: $orange;
-    z-index: 2;
-    position: fixed;
-    left: 60%; //align left edge with center of viewport
-    top: 300px;
-    width: 400px;
-    margin-left: -11px; /* move left by half element's width */
-}
-/* ****************************************************************************************************************** */
-
-
-

@@ -1,3 +1,29 @@
+/*
+    Description: Main CSS styles
+    Author: Kevin Tjahjadi
+*/
+/* - CONTENTS
+-------------------------------------------------
+    - SASS Imports ......................... 1.0.
+        - CSS Reset ........................ 1.1.
+        - Grid ............................. 1.2.
+        - Colours .......................... 1.3.
+        - Mixins ............................1.4.
+        - Base Elements .................... 1.5.
+        - Link Elements .................... 1.6.
+        - Font Face ........................ 1.7.
+    - Global ............................... 2.0.
+        - Structural ....................... 2.1.
+        - Build Elements ................... 2.2.
+*/
+/*********************************************
+    - 1.0 -  SASS IMPORTS
+*********************************************/
+/* - 1.1. - RESETS
+------------------------------------------ */
+/* ****************************************************************************
+ * CSS Reset
+ */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
   margin: 0;
   padding: 0; }
@@ -29,6 +55,10 @@ q:before, q:after {
 abbr, acronym {
   border: 0; }
 
+/* ************************************************************************* */
+/* ****************************************************************************
+ * HTML5 Reset
+ */
 article, aside, dialog, figure, footer, header, hgroup, nav, section {
   display: block;
   zoom: 1; }
@@ -38,13 +68,366 @@ audio, canvas, video {
   *display: inline;
   *zoom: 1; }
 
+/* ************************************************************************* */
+/* - 1.2. - GRID
+------------------------------------------ */
+/* ****************************************************************************
+ * Grid System Styling
+ */
+.wrapper {
+  margin: 0 auto;
+  max-width: 1000px; }
+
+.row .span1 {
+  float: left;
+  margin-left: 2%; }
+.row .span2 {
+  float: left;
+  margin-left: 2%; }
+.row .span3 {
+  float: left;
+  margin-left: 2%; }
+.row .span4 {
+  float: left;
+  margin-left: 2%; }
+.row .span5 {
+  float: left;
+  margin-left: 2%; }
+.row .span6 {
+  float: left;
+  margin-left: 2%; }
+.row .span7 {
+  float: left;
+  margin-left: 2%; }
+.row .span8 {
+  float: left;
+  margin-left: 2%; }
+.row .span9 {
+  float: left;
+  margin-left: 2%; }
+.row .span10 {
+  float: left;
+  margin-left: 2%; }
+.row .span11 {
+  float: left;
+  margin-left: 2%; }
+.row .span12 {
+  float: left;
+  margin-left: 2%; }
+.row .span1 {
+  width: 6.5%; }
+.row .span2 {
+  width: 15%; }
+  .row .span2 .span1 {
+    margin-left: 13.33333%;
+    width: 43.33333%; }
+.row .span3 {
+  width: 23.5%; }
+  .row .span3 .span1 {
+    margin-left: 8.51064%;
+    width: 27.65957%; }
+  .row .span3 .span2 {
+    margin-left: 8.51064%;
+    width: 63.82979%; }
+.row .span4 {
+  width: 32%; }
+  .row .span4 .span1 {
+    margin-left: 6.25%;
+    width: 20.3125%; }
+  .row .span4 .span2 {
+    margin-left: 6.25%;
+    width: 46.875%; }
+  .row .span4 .span3 {
+    margin-left: 6.25%;
+    width: 73.4375%; }
+.row .span5 {
+  width: 40.5%; }
+  .row .span5 .span1 {
+    margin-left: 4.93827%;
+    width: 16.04938%; }
+  .row .span5 .span2 {
+    margin-left: 4.93827%;
+    width: 37.03704%; }
+  .row .span5 .span3 {
+    margin-left: 4.93827%;
+    width: 58.02469%; }
+  .row .span5 .span4 {
+    margin-left: 4.93827%;
+    width: 79.01235%; }
+.row .span6 {
+  width: 49%; }
+  .row .span6 .span1 {
+    margin-left: 4.08163%;
+    width: 13.26531%; }
+  .row .span6 .span2 {
+    margin-left: 4.08163%;
+    width: 30.61224%; }
+  .row .span6 .span3 {
+    margin-left: 4.08163%;
+    width: 47.95918%; }
+  .row .span6 .span4 {
+    margin-left: 4.08163%;
+    width: 65.30612%; }
+  .row .span6 .span5 {
+    margin-left: 4.08163%;
+    width: 82.65306%; }
+.row .span7 {
+  width: 57.5%; }
+  .row .span7 .span1 {
+    margin-left: 3.47826%;
+    width: 11.30435%; }
+  .row .span7 .span2 {
+    margin-left: 3.47826%;
+    width: 26.08696%; }
+  .row .span7 .span3 {
+    margin-left: 3.47826%;
+    width: 40.86957%; }
+  .row .span7 .span4 {
+    margin-left: 3.47826%;
+    width: 55.65217%; }
+  .row .span7 .span5 {
+    margin-left: 3.47826%;
+    width: 70.43478%; }
+  .row .span7 .span6 {
+    margin-left: 3.47826%;
+    width: 85.21739%; }
+.row .span8 {
+  width: 66%; }
+  .row .span8 .span1 {
+    margin-left: 3.0303%;
+    width: 9.84848%; }
+  .row .span8 .span2 {
+    margin-left: 3.0303%;
+    width: 22.72727%; }
+  .row .span8 .span3 {
+    margin-left: 3.0303%;
+    width: 35.60606%; }
+  .row .span8 .span4 {
+    margin-left: 3.0303%;
+    width: 48.48485%; }
+  .row .span8 .span5 {
+    margin-left: 3.0303%;
+    width: 61.36364%; }
+  .row .span8 .span6 {
+    margin-left: 3.0303%;
+    width: 74.24242%; }
+  .row .span8 .span7 {
+    margin-left: 3.0303%;
+    width: 87.12121%; }
+.row .span9 {
+  width: 74.5%; }
+  .row .span9 .span1 {
+    margin-left: 2.68456%;
+    width: 8.72483%; }
+  .row .span9 .span2 {
+    margin-left: 2.68456%;
+    width: 20.13423%; }
+  .row .span9 .span3 {
+    margin-left: 2.68456%;
+    width: 31.54362%; }
+  .row .span9 .span4 {
+    margin-left: 2.68456%;
+    width: 42.95302%; }
+  .row .span9 .span5 {
+    margin-left: 2.68456%;
+    width: 54.36242%; }
+  .row .span9 .span6 {
+    margin-left: 2.68456%;
+    width: 65.77181%; }
+  .row .span9 .span7 {
+    margin-left: 2.68456%;
+    width: 77.18121%; }
+  .row .span9 .span8 {
+    margin-left: 2.68456%;
+    width: 88.5906%; }
+.row .span10 {
+  width: 83%; }
+  .row .span10 .span1 {
+    margin-left: 2.40964%;
+    width: 7.83133%; }
+  .row .span10 .span2 {
+    margin-left: 2.40964%;
+    width: 18.07229%; }
+  .row .span10 .span3 {
+    margin-left: 2.40964%;
+    width: 28.31325%; }
+  .row .span10 .span4 {
+    margin-left: 2.40964%;
+    width: 38.55422%; }
+  .row .span10 .span5 {
+    margin-left: 2.40964%;
+    width: 48.79518%; }
+  .row .span10 .span6 {
+    margin-left: 2.40964%;
+    width: 59.03614%; }
+  .row .span10 .span7 {
+    margin-left: 2.40964%;
+    width: 69.27711%; }
+  .row .span10 .span8 {
+    margin-left: 2.40964%;
+    width: 79.51807%; }
+  .row .span10 .span9 {
+    margin-left: 2.40964%;
+    width: 89.75904%; }
+.row .span11 {
+  width: 91.5%; }
+  .row .span11 .span1 {
+    margin-left: 2.18579%;
+    width: 7.10383%; }
+  .row .span11 .span2 {
+    margin-left: 2.18579%;
+    width: 16.39344%; }
+  .row .span11 .span3 {
+    margin-left: 2.18579%;
+    width: 25.68306%; }
+  .row .span11 .span4 {
+    margin-left: 2.18579%;
+    width: 34.97268%; }
+  .row .span11 .span5 {
+    margin-left: 2.18579%;
+    width: 44.2623%; }
+  .row .span11 .span6 {
+    margin-left: 2.18579%;
+    width: 53.55191%; }
+  .row .span11 .span7 {
+    margin-left: 2.18579%;
+    width: 62.84153%; }
+  .row .span11 .span8 {
+    margin-left: 2.18579%;
+    width: 72.13115%; }
+  .row .span11 .span9 {
+    margin-left: 2.18579%;
+    width: 81.42077%; }
+  .row .span11 .span10 {
+    margin-left: 2.18579%;
+    width: 90.71038%; }
+.row .span12 {
+  width: 100%; }
+  .row .span12 .span1 {
+    margin-left: 2%;
+    width: 6.5%; }
+  .row .span12 .span2 {
+    margin-left: 2%;
+    width: 15%; }
+  .row .span12 .span3 {
+    margin-left: 2%;
+    width: 23.5%; }
+  .row .span12 .span4 {
+    margin-left: 2%;
+    width: 32%; }
+  .row .span12 .span5 {
+    margin-left: 2%;
+    width: 40.5%; }
+  .row .span12 .span6 {
+    margin-left: 2%;
+    width: 49%; }
+  .row .span12 .span7 {
+    margin-left: 2%;
+    width: 57.5%; }
+  .row .span12 .span8 {
+    margin-left: 2%;
+    width: 66%; }
+  .row .span12 .span9 {
+    margin-left: 2%;
+    width: 74.5%; }
+  .row .span12 .span10 {
+    margin-left: 2%;
+    width: 83%; }
+  .row .span12 .span11 {
+    margin-left: 2%;
+    width: 91.5%; }
+.row > :first-child,
+.row .row > :first-child {
+  margin-left: 0; }
+
+.row:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden; }
+
+.lte7 .row {
+  height: 1%; }
+
+@media all and (min-width: 1024px) {
+  .wrapper {
+    max-width: 1000px; } }
+@media all and (max-width: 768px) {
+  .row .span1 {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    text-align: center; }
+  .row .span2 {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    text-align: center; }
+  .row .span3 {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    text-align: center; }
+  .row .span4 {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    text-align: center; }
+  .row .span5 {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    text-align: center; }
+  .row .span6 {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    text-align: center; }
+  .row .span7 {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    text-align: center; }
+  .row .span8 {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    text-align: center; }
+  .row .span9 {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    text-align: center; }
+  .row .span10 {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    text-align: center; }
+  .row .span11 {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    text-align: center; }
+  .row .span12 {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    text-align: center; } }
+/* ************************************************************************* */
+/* - 1.3. - COLOURS
+------------------------------------------ */
+/* - 1.4. - MIXINS
+------------------------------------------ */
+/* - 1.5. - BASE ELEMENTS
+------------------------------------------ */
+/* ****************************************************************************
+ * BASE ELEMENTS
+ */
 html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
-
-h1, h2, h3, h4 {
-  margin: 1em 0 1em 0; }
 
 h1 {
   font-size: 2em; }
@@ -86,312 +469,171 @@ img, object, embed {
 .clear {
   clear: both; }
 
-/* *********************************************************************************************************************
- * Grid System Styling
- */
-.contents {
-  margin: 0 auto;
-  padding: 0;
-  max-width: 1000px; }
+/* ************************************************************************* */
+/* - 1.6. - LINK ELEMENTS
+------------------------------------------ */
+/*
+    Description: Links and buttons
+    Author: Kevin Tjahjadi
+*/
+/* - CONTENTS
+-------------------------------------------------
+    - LINKS ................................ 1.0.
+        - Base link styles ................. 1.1.
+        - Header links ..................... 1.2.
+        - Footer links ..................... 1.3.
+        - Title links ...................... 1.4.
+    - BUTTONS .............................. 2.0.
+*/
+/*********************************************
+    - 1.0 -  LINKS
+*********************************************/
+/* - 1.1. - BASE LINK STYLES
+------------------------------------------ */
+a {
+  color: #2b2b2b;
+  cursor: pointer;
+  text-decoration: none;
+  outline: 0;
+  /* Improve readability when focused and hovered in all browsers: h5bp.com/h */ }
+  a:visited {
+    color: #2b2b2b; }
+  a:hover {
+    color: #2b2b2b;
+    text-decoration: none; }
+  a:focus, a:active {
+    outline: none; }
 
-.row {
-  clear: both;
-  padding: 0 10px; }
+/* - 1.2. - HEADER LINKS
+------------------------------------------ */
+header a {
+  -moz-border-radius: 14px;
+  -webkit-border-radius: 14px;
+  border-radius: 14px;
+  padding: 5px 20px;
+  background-color: #f6f6f6;
+  color: #f6f6f6;
+  line-height: 1.1em; }
+header a:hover {
+  font-size: 1.1em; }
 
-.col1 {
+/* - 1.3. - FOOTER LINKS
+------------------------------------------ */
+footer a, footer a:visited, footer a:hover {
+  color: #f6f6f6;
+  line-height: 1.1em; }
+footer a:hover {
+  font-size: 1.1em; }
+
+/* - 1.4. - TITLE LINKS
+------------------------------------------ */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: #2b2b2b; }
+
+/*********************************************
+    - 2.0 -  BUTTONS
+*********************************************/
+a.button {
+  border: 1px solid #535050;
+  color: #FFFFFF;
+  display: inline-block;
   float: left;
-  margin: 0 2% 0 0;
-  width: 6.5%; }
-  .col1.last {
-    margin-right: 0; }
-  .col1 img {
-    width: 100%;
-    height: auto;
-    display: block; }
+  margin-bottom: 0.625em;
+  outline: 0 none;
+  padding: 0.438em 0.938em;
+  width: auto;
+  -moz-border-radius: 0.188em;
+  -webkit-border-radius: 0.188em;
+  border-radius: 0.188em; }
+  a.button:hover {
+    color: #ffffff;
+    text-decoration: none; }
+  a.button:active {
+    opacity: 0.9; }
 
-.col2 {
-  float: left;
-  margin: 0 2% 0 0;
-  width: 15%; }
-  .col2.last {
-    margin-right: 0; }
-  .col2 img {
-    width: 100%;
-    height: auto;
-    display: block; }
+a.button-full-width {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  text-align: center;
+  width: 100%; }
 
-.col3 {
-  float: left;
-  margin: 0 2% 0 0;
-  width: 23.5%; }
-  .col3.last {
-    margin-right: 0; }
-  .col3 img {
-    width: 100%;
-    height: auto;
-    display: block; }
+/* Fix for odd Mozilla border & padding issues */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
 
-.col4 {
-  float: left;
-  margin: 0 2% 0 0;
-  width: 32%; }
-  .col4.last {
-    margin-right: 0; }
-  .col4 img {
-    width: 100%;
-    height: auto;
-    display: block; }
+/* - 1.7. - FONT FACE
+------------------------------------------ */
+/*
+    Description: Font-face
+    Author: Kevin Tjahjadi
+/*
 
-.col5 {
-  float: left;
-  margin: 0 2% 0 0;
-  width: 40.5%; }
-  .col5.last {
-    margin-right: 0; }
-  .col5 img {
-    width: 100%;
-    height: auto;
-    display: block; }
 
-.col6 {
-  float: left;
-  margin: 0 2% 0 0;
-  width: 49%; }
-  .col6.last {
-    margin-right: 0; }
-  .col6 img {
-    width: 100%;
-    height: auto;
-    display: block; }
+/* - CONTENTS
+-------------------------------------------------
+    - FONT_FACE  ........................... 1.0.
+        - Name of Font ..................... 3.1.
 
-.col7 {
-  float: left;
-  margin: 0 2% 0 0;
-  width: 57.5%; }
-  .col7.last {
-    margin-right: 0; }
-  .col7 img {
-    width: 100%;
-    height: auto;
-    display: block; }
+*/
+/*********************************************
+    - 1.0 -  MIXINS
+*********************************************/
+/* - 1.1. - Name of Font
+------------------------------------------ */
+@font-face {
+  font-family: 'NAME OF FONT';
+  src: url("assets/fonts/NAME OF FONT.eot");
+  src: url("assets/fonts/NAME OF FONT.eot?#iefix") format("embedded-opentype"), url("assets/fonts/NAME OF FONT.woff") format("woff"), url("assets/fonts/NAME OF FONT.ttf") format("truetype"), url("assets/fonts/NAME OF FONT.svg#wisdom_script_airegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 
-.col8 {
-  float: left;
-  margin: 0 2% 0 0;
-  width: 66%; }
-  .col8.last {
-    margin-right: 0; }
-  .col8 img {
-    width: 100%;
-    height: auto;
-    display: block; }
+/*********************************************
+    - 2.0 -  GLOBAL
+*********************************************/
+/* - 2.1. - STRUCTURAL
+------------------------------------------ */
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
 
-.col9 {
-  float: left;
-  margin: 0 2% 0 0;
-  width: 74.5%; }
-  .col9.last {
-    margin-right: 0; }
-  .col9 img {
-    width: 100%;
-    height: auto;
-    display: block; }
-
-.col10 {
-  float: left;
-  margin: 0 2% 0 0;
-  width: 83%; }
-  .col10.last {
-    margin-right: 0; }
-  .col10 img {
-    width: 100%;
-    height: auto;
-    display: block; }
-
-.col11 {
-  float: left;
-  margin: 0 2% 0 0;
-  width: 91.5%; }
-  .col11.last {
-    margin-right: 0; }
-  .col11 img {
-    width: 100%;
-    height: auto;
-    display: block; }
-
-.col12 {
-  float: left;
-  margin: 0 2% 0 0;
-  width: 100%;
-  margin: 0; }
-  .col12.last {
-    margin-right: 0; }
-  .col12 img {
-    width: 100%;
-    height: auto;
-    display: block; }
-
-@media all and (min-width: 1024px) {
-  .contents {
-    max-width: 1000px; }
-
-  .contents .row {
-    padding: 0; } }
-@media all and (max-width: 768px) {
-  .col1 {
-    float: none;
-    width: 100%; }
-
-  .col2 {
-    float: none;
-    width: 100%; }
-
-  .col3 {
-    float: none;
-    width: 100%; }
-
-  .col4 {
-    float: none;
-    width: 100%; }
-
-  .col5 {
-    float: none;
-    width: 100%; }
-
-  .col6 {
-    float: none;
-    width: 100%; }
-
-  .col7 {
-    float: none;
-    width: 100%; }
-
-  .col8 {
-    float: none;
-    width: 100%; }
-
-  .col9 {
-    float: none;
-    width: 100%; }
-
-  .col10 {
-    float: none;
-    width: 100%; }
-
-  .col11 {
-    float: none;
-    width: 100%; } }
-/* ****************************************************************************************************************** */
 body {
-  background-color: whitesmoke;
-  font-family: Verdana, Helvetica, sans-serif;
-  border-top: 15px solid #f3efe0;
-  color: #936a4a;
+  margin: 0;
+  font-family: Geneva, Lucida Sans, Lucida Grande, Lucida Sans Unicode, Verdana, sans-serif;
   font-size: 1em;
-  line-height: 1.4; }
-
-.spotlight {
-  padding: 20px 0; }
+  line-height: 1.4;
+  background-color: #f6f6f6; }
 
 header {
   padding: 20px 0;
-  border-bottom: 1px dashed black;
-  text-align: center; }
-  header a {
-    padding: 5px 20px;
-    background-color: #afeaaa;
-    color: #41924b; }
-
-.header-logo {
-  width: 50px;
-  height: 50px; }
+  text-align: center;
+  background-color: #2b2b2b; }
 
 footer {
+  background-color: #2b2b2b;
+  color: #f6f6f6;
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding: 4px 0 2px;
-  background-color: #f3efe0;
-  color: gray; }
+  padding: 4px 0 2px; }
   footer div {
     padding: 3px 0; }
 
-.footer-left {
+.left {
   text-align: left; }
 
-.footer-right {
+.right {
   text-align: right; }
 
-.center-align {
+.center {
   text-align: center; }
 
+/* - 2.2. - BUILD ELEMENTS
+------------------------------------------ */
 .hide {
   display: none; }
 
-a {
-  cursor: pointer;
-  text-decoration: none;
-  color: #fe8402; }
-  a:active {
-    color: #fe8402; }
-  a:hover {
-    color: #4d4d4d; }
-  a.gray {
-    color: gray; }
-    a.gray:hover {
-      color: #4d4d4d; }
-
-@media all and (max-width: 768px) {
-  .footer-left, .footer-right {
-    text-align: center; } }
-.page404 {
+.center-align {
   text-align: center; }
-
-/* *********************************************************************************************************************
- * Parallax Styling
- */
-.parallax-wrapper {
-  height: 4000px; }
-
-.parallax-background {
-  position: fixed;
-  left: 400px;
-  width: 400px;
-  height: 400px;
-  display: block;
-  background: url("/images/torchlight_avatars/Torchlight_avatar_1.jpg") center; }
-
-#parallax1 {
-  background-color: #87e293;
-  z-index: 3;
-  position: fixed;
-  left: 400px;
-  /* align left edge with center of viewport */
-  top: 100px;
-  width: 100px;
-  margin-left: -50px;
-  /* move left by half element's width */ }
-
-#parallax2 {
-  background-color: #41924b;
-  color: whitesmoke;
-  z-index: 1;
-  position: fixed;
-  left: 100px;
-  top: 200px;
-  width: 400px;
-  margin-left: -11px;
-  /* move left by half element's width */ }
-
-#parallax3 {
-  background-color: gray;
-  color: #fe8402;
-  z-index: 2;
-  position: fixed;
-  left: 60%;
-  top: 300px;
-  width: 400px;
-  margin-left: -11px;
-  /* move left by half element's width */ }
-
-/* ****************************************************************************************************************** */
