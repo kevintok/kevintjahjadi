@@ -16,13 +16,13 @@ import (
 // }
 
 var index = template.Must(template.ParseFiles(
-  "static/templates/base.html",
-  "static/templates/index.html",
+  "apps/main/templates/base.html",
+  "apps/main/templates/index.html",
 ))
 
 var page404 = template.Must(template.ParseFiles(
-  "static/templates/base.html",
-  "static/templates/static_pages/404.html",
+  "apps/main/templates/base.html",
+  "apps/main/templates/404.html",
 ))
 
 func init() {
