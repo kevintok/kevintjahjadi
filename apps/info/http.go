@@ -15,7 +15,7 @@ func init() {
 
 var infoTmpl = template.Must(template.ParseFiles(
   "apps/main/templates/base.html",
-  "apps/info/templates/info.html"
+  "apps/info/templates/info.html",
 ))
 
 func infoHandler(w http.ResponseWriter, r *http.Request) {

@@ -68,14 +68,16 @@
     ------------------------------------------ */
 
     html {
+        height: 100%;
         font-size: 100%;
         -webkit-text-size-adjust: 100%;
         -ms-text-size-adjust: 100%;
     }
 
     body {
+        height: 100%;
         margin: 0;
-        font-family: Geneva, Lucida Sans, Lucida Grande, Lucida Sans Unicode, Verdana, sans-serif;
+        font-family: Lucida Grande, Lucida Sans Unicode, Verdana, sans-serif;
         font-size: 1em;
         line-height: 1.4;
         background-color: $background-color;
@@ -105,6 +107,8 @@
     .center { text-align: center }
     .justify { text-align: justify }
 
+    .full-height { height: 100% }
+
     /* - 2.2. - BUILD ELEMENTS
     ------------------------------------------ */
 
@@ -114,4 +118,19 @@
 
     .center-align {
         text-align: center;
+    }
+
+    .base.wrapper {
+        box-sizing: border-box;
+        height: 100%;
+        margin-top: -62px;
+        padding-top: 62px;
+        margin-bottom: -40px;
+        padding-bottom: 40px;
+    }
+
+    .page-list {
+        height: 100%;
+        background-color: $black;
+        color: $white;
     }

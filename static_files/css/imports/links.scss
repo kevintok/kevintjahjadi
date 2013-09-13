@@ -52,12 +52,17 @@
             @include border-radius(14px);
             padding: 5px 20px;
             background-color: $white;
-            color: $footer-text;
+            color: $black;
             line-height: 1.1em;
+        }
+
+        a:visited {
+            color: $black;
         }
 
         a:hover {
             font-size: 1.1em;
+            color: $black;
         }
     }
 
