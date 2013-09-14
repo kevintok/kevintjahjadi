@@ -10,16 +10,16 @@ import (
 )
 
 func init() {
-  http.HandleFunc("/parallax/", infoHandler)
+  http.HandleFunc("/parallax/", handler)
 }
 
-var infoTmpl = template.Must(template.ParseFiles(
+var parallaxTemplate = template.Must(template.ParseFiles(
   "apps/main/templates/base.html",
   "apps/parallax/templates/parallax.html",
 ))
 
-func infoHandler(w http.ResponseWriter, r *http.Request) {
-  if err := infoTmpl.Execute(w, nil); err != nil {
+func handler(w http.ResponseWriter, r *http.Request) {
+  if err := parallaxTemplate.Execute(w, nil); err != nil {
     http.Error(w, err.Error(), http.StatusInternalServerError)
   }
 }

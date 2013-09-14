@@ -122,15 +122,9 @@
 
     .base.wrapper {
         box-sizing: border-box;
-        height: 100%;
+        min-height: 100%;
         margin-top: -62px;
         padding-top: 62px;
         margin-bottom: -40px;
         padding-bottom: 40px;
-    }
-
-    .page-list {
-        height: 100%;
-        background-color: $black;
-        color: $white;
     }
