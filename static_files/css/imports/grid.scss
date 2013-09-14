@@ -3,7 +3,7 @@
  */
 
 $cols: 12;
-$gutter: 5.5%;
+$gutter: 3.5%;
 
 $one_col: (100% - ($gutter * ($cols - 1))) / $cols;
 
@@ -75,6 +75,14 @@ $one_col: (100% - ($gutter * ($cols - 1))) / $cols;
                 width: 100%;
                 margin-left: 0;
                 text-align: center;
+                @for $j from 1 through ($i - 1) {
+                    .span#{$j} {
+                        float: none;
+                        width: 100%;
+                        margin-left: 0;
+                        text-align: center;
+                    }
+                }
             }
         }
     }

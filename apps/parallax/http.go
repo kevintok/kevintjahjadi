@@ -1,12 +1,8 @@
 package static_pages
 
 import (
-    // "appengine"
-    // "appengine/datastore"
-    // "appengine/user"
     "html/template"
     "net/http"
-    // "time"
 )
 
 func init() {

@@ -128,3 +128,19 @@
         margin-bottom: -40px;
         padding-bottom: 40px;
     }
+
+    .grid-demo {
+        padding-top: 10px;
+        &.last {
+            padding-bottom: 10px;
+        }
+        div {
+            min-height: 1em;
+            background-color: $black;
+            color: $white;
+        }
+        .whitebg {
+            background-color: $white;
+            color: $black;
+        }
+    }
