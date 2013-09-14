@@ -1,5 +1,5 @@
 sass --watch static_files/css/main.scss:static/css/main.css
-dev_appserver.py ../kevintjahjadi
+dev_appserver.py --host 0.0.0.0 ../kevintjahjadi
 appcfg.py update ../kevintjahjadi
 
 https://github.com/airbnb/javascript
