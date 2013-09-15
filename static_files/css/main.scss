@@ -90,6 +90,7 @@
     }
 
     footer {
+        z-index: 1000;
         background-color: $footer;
         color: $footer-text;
         position: fixed;
@@ -106,6 +107,7 @@
     .right { text-align: right }
     .center { text-align: center }
     .justify { text-align: justify }
+    .border-box { box-sizing: border-box }
 
     .full-height { height: 100% }
 
@@ -130,7 +132,7 @@
     }
 
     .grid-demo {
-        padding-top: 10px;
+        margin-top: 10px;
         &.last {
             padding-bottom: 10px;
         }
@@ -143,4 +145,50 @@
             background-color: $white;
             color: $black;
         }
+        .pad {
+            box-sizing: border-box;
+            padding: 10px;
+        }
+    }
+
+    .parallax-wrapper {
+        height: 2000px;
+    }
+    .parallax-background {
+        position: fixed;
+        left: 400px;
+        width: 400px;
+        height: 400px;
+        display: block;
+        background: url('/images/torchlight_avatars/Torchlight_avatar_1.jpg') center;
+    }
+    #parallax1 {
+        background-color: $red;
+        color: $white;
+        z-index: 3;
+        position: fixed;
+        left: 400px; /* align left edge with center of viewport */
+        top: 100px;
+        width: 100px;
+        margin-left: -50px; /* move left by half element's width */
+    }
+    #parallax2 {
+        background-color: $black;
+        color: $white;
+        z-index: 1;
+        position: fixed;
+        left: 100px; //align left edge with center of viewport
+        top: 200px;
+        width: 400px;
+        margin-left: -11px; /* move left by half element's width */
+    }
+    #parallax3 {
+        background-color: gray;
+        color: $white;
+        z-index: 2;
+        position: fixed;
+        left: 60%; //align left edge with center of viewport
+        top: 300px;
+        width: 400px;
+        margin-left: -11px; /* move left by half element's width */
     }

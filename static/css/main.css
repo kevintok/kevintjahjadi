@@ -948,6 +948,7 @@ header {
   background-color: #2b2b2b; }
 
 footer {
+  z-index: 1000;
   background-color: #2b2b2b;
   color: #f6f6f6;
   position: fixed;
@@ -969,6 +970,9 @@ footer {
 .justify {
   text-align: justify; }
 
+.border-box {
+  box-sizing: border-box; }
+
 .full-height {
   height: 100%; }
 
@@ -989,7 +993,7 @@ footer {
   padding-bottom: 40px; }
 
 .grid-demo {
-  padding-top: 10px; }
+  margin-top: 10px; }
   .grid-demo.last {
     padding-bottom: 10px; }
   .grid-demo div {
@@ -999,3 +1003,51 @@ footer {
   .grid-demo .whitebg {
     background-color: #f6f6f6;
     color: #2b2b2b; }
+  .grid-demo .pad {
+    box-sizing: border-box;
+    padding: 10px; }
+
+.parallax-wrapper {
+  height: 2000px; }
+
+.parallax-background {
+  position: fixed;
+  left: 400px;
+  width: 400px;
+  height: 400px;
+  display: block;
+  background: url("/images/torchlight_avatars/Torchlight_avatar_1.jpg") center; }
+
+#parallax1 {
+  background-color: #de1b1b;
+  color: #f6f6f6;
+  z-index: 3;
+  position: fixed;
+  left: 400px;
+  /* align left edge with center of viewport */
+  top: 100px;
+  width: 100px;
+  margin-left: -50px;
+  /* move left by half element's width */ }
+
+#parallax2 {
+  background-color: #2b2b2b;
+  color: #f6f6f6;
+  z-index: 1;
+  position: fixed;
+  left: 100px;
+  top: 200px;
+  width: 400px;
+  margin-left: -11px;
+  /* move left by half element's width */ }
+
+#parallax3 {
+  background-color: gray;
+  color: #f6f6f6;
+  z-index: 2;
+  position: fixed;
+  left: 60%;
+  top: 300px;
+  width: 400px;
+  margin-left: -11px;
+  /* move left by half element's width */ }
